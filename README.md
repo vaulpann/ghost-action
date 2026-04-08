@@ -12,8 +12,7 @@
 
 <p align="center">
   <a href="https://ghost.validia.ai">Ghost</a> &middot;
-  <a href="https://github.com/vaulpann/ghost">Main Repo</a> &middot;
-  <a href="./PUBLISHING.md">Publishing Guide</a>
+  <a href="https://github.com/vaulpann/ghost">Main Repo</a>
 </p>
 
 <p align="center">
@@ -96,18 +95,6 @@ jobs:
 | lodash | 4.17.21 | 🔵 Low | The lodash package version 4.17.21 does not contain any install scripts, obfuscated code, or suspicious outbound network calls. |
 | zod | 3.23.8 -> 3.25.76 | 🔵 Low | The changes in the package primarily involve updates to the license and README files, with no new install scripts, obfuscated code, or suspicious network calls. |
 ```
-
-## Repository Layout
-
-Publish this action from its own public repository with this root layout:
-
-- `action.yml`
-- `README.md`
-- `package.json`
-- `LICENSE`
-- `src/index.js`
-
-Use [PUBLISHING.md](./PUBLISHING.md) for the release steps and Marketplace checklist.
 
 ## License
 
