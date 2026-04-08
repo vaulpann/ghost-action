@@ -10,7 +10,7 @@ inputs:
   api-url:
     description: "Ghost API endpoint"
     required: false
-    default: "https://ghost-api-495743911277.us-central1.run.app"
+    default: "https://ghostapi.validia.ai"
   fail-on:
     description: "Minimum severity to fail the check (critical, high, medium, none)"
     required: false

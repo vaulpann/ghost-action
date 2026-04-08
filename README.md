@@ -72,7 +72,7 @@ jobs:
 
 | Input | Description | Default |
 |---|---|---|
-| `api-url` | Ghost API endpoint | `https://ghost-api-495743911277.us-central1.run.app` |
+| `api-url` | Ghost API endpoint | `https://ghostapi.validia.ai` |
 | `fail-on` | Minimum severity that fails the job: `critical`, `high`, `medium`, `none` | `high` |
 | `token` | GitHub token used to create or update the PR comment | `${{ github.token }}` |
 

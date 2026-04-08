@@ -17,7 +17,7 @@ const { execSync } = require("child_process");
 // Configuration
 // ---------------------------------------------------------------------------
 
-const API_URL = process.env.GHOST_API_URL || "https://ghost-api-495743911277.us-central1.run.app";
+const API_URL = process.env.GHOST_API_URL || "https://ghostapi.validia.ai";
 const FAIL_ON = (process.env.GHOST_FAIL_ON || "critical").toLowerCase();
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "";
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY || "";
