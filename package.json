@@ -1,0 +1,28 @@
+{
+  "name": "ghost-action",
+  "version": "1.0.0",
+  "description": "GitHub Action for Ghost supply chain dependency scanning",
+  "main": "src/index.js",
+  "private": false,
+  "license": "MIT",
+  "homepage": "https://ghost.validia.ai",
+  "bugs": {
+    "url": "https://github.com/vaulpann/ghost-action/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaulpann/ghost-action.git"
+  },
+  "keywords": [
+    "github-action",
+    "supply-chain",
+    "security",
+    "dependencies",
+    "npm",
+    "python",
+    "pull-request"
+  ]
+}

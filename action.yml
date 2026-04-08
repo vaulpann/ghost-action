@@ -1,0 +1,32 @@
+name: "Ghost Supply Chain Scan"
+description: "Analyze new and updated npm and Python dependencies for supply chain risk in pull requests"
+author: "Validia"
+
+branding:
+  icon: "shield"
+  color: "blue"
+
+inputs:
+  api-url:
+    description: "Ghost API endpoint"
+    required: false
+    default: "https://ghost-api-495743911277.us-central1.run.app"
+  fail-on:
+    description: "Minimum severity to fail the check (critical, high, medium, none)"
+    required: false
+    default: "high"
+  token:
+    description: "GitHub token for posting PR comments"
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Run Ghost Supply Chain Scanner
+      shell: bash
+      env:
+        GHOST_API_URL: ${{ inputs.api-url }}
+        GHOST_FAIL_ON: ${{ inputs.fail-on }}
+        GITHUB_TOKEN: ${{ inputs.token }}
+      run: node ${{ github.action_path }}/src/index.js
