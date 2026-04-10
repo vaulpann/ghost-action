@@ -1,0 +1,10 @@
+name: Merly Mentor Check
+
+on: [push, pull_request]
+
+jobs:
+  mentor-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Merly Mentor
+        uses: merly-ai/mentor-action@v1
